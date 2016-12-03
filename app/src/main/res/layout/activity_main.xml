@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.mohsin.coffeeshop.MainActivity">
+
+   <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:scaleType="fitXY"
+       android:src="@drawable/coffee"
+       />
+    <TextView
+        android:id="@+id/q1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:text="QUANTITY" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="-"
+        android:fontFamily="serif"
+        android:layout_gravity="center"
+        android:layout_marginLeft="100dp"
+        android:layout_marginBottom="150dp"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:onClick="decrement"
+        />
+    <TextView
+        android:id="@+id/v1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+       android:textAllCaps="true"
+        android:fontFamily="serif"
+        android:layout_gravity="center"
+        android:layout_marginBottom="150dp"
+        android:textColor="@android:color/white"
+        android:text="0" />
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="+"
+        android:fontFamily="serif"
+        android:layout_gravity="center"
+        android:layout_marginBottom="150dp"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:onClick="increment"
+
+        />
+
+
+</LinearLayout>
+
+
+    <Button
+        android:id="@+id/b3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="ORDER"
+        android:fontFamily="serif"
+        android:layout_gravity="center"
+        android:layout_marginBottom="200dp"
+        android:textSize="30dp"
+
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/a1"
+        android:onClick="submitted"
+
+        />
+
+    <TextView
+        android:id="@+id/a1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/v2"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/white"
+        android:text="AMOUNT"
+
+        />
+
+    <TextView
+        android:id="@+id/v2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:layout_gravity="right"
+        android:fontFamily="serif"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/white"
+        android:text="$0"
+        />
+</RelativeLayout>
